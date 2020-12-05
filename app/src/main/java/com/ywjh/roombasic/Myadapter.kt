@@ -17,12 +17,9 @@ import java.util.*
 class Myadapter(val usecardview:Boolean): RecyclerView.Adapter<Myadapter.MyViewHolder>() {
     private var allWords: List<Word> = ArrayList()
 
-
-
     fun setAllWords(allWords: List<Word>) {
         this.allWords = allWords
     }
-
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var textViewNumber: TextView
         var textViewEnglish: TextView

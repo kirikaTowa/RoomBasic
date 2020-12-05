@@ -14,6 +14,14 @@ class Word(word: String, chineseMeaning: String) {
     @ColumnInfo(name = "chinese_meaning")
     private var chineseMeaning: String
 
+
+
+    init {
+        this.word = word
+        this.chineseMeaning = chineseMeaning
+
+    }
+
     fun getId(): Int {
         return id
     }
@@ -38,8 +46,6 @@ class Word(word: String, chineseMeaning: String) {
         this.chineseMeaning = chineseMeaning
     }
 
-    init {
-        this.word = word
-        this.chineseMeaning = chineseMeaning
-    }
+
+
 }
